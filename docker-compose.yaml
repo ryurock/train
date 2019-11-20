@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    container_name: "train"
+    ports:
+      - "50051:50051"
+    volumes:
+      - "./:/app"
+      - "~/.aws:/root"
+    environment:
+      SERVER_LISTEN_ADDRESS: 0.0.0.0
+      SERVER_LISTEN_PORT: 50051
+    tty: true
+    stdin_open: true
+    # command: dart bin/server.dart

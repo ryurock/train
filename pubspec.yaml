@@ -1,0 +1,8 @@
+name: "train"
+description: Simple Http Server
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+dependencies:
+  http_server: ^0.9.8+3
+  yaml: ^2.2.0
+  args: ^1.5.2
